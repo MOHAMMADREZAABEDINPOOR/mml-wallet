@@ -1,6 +1,6 @@
 <div align="center">
 
-# 💳 PIMX_WALLET_BOT ⚡📊
+# 💳 MML Wallet ⚡📊
 
 ### Asynchronous Telegram Financial Wallet Bot with Cloud Keep-Alive & Visual Web Database Viewer
 
@@ -11,7 +11,7 @@
 [![Read in Persian](https://img.shields.io/badge/مطالعه_به_فارسی-Persian_README-008080?style=for-the-badge)](#-توضیحات-فارسی-persian-description)
 
 <p align="center">
-  A feature-packed Telegram digital wallet bot built on asyncio and aiosqlite. Features multi-user ledger management, internal and external keep-alive ping mechanisms tailored for free PaaS hosts (Render, Railway, Heroku), and a standalone Flask administrative database viewer.
+  A high-performance, asynchronous Telegram cryptocurrency & digital asset wallet bot. Built with modern Python <code>asyncio</code> and <code>aiosqlite</code>, featuring multi-user ledger management, an internal & external cloud keep-alive heartbeat engine designed for free-tier PaaS (Render, Railway, Heroku), and a standalone Flask administrative database viewer.
 </p>
 
 [Key Features](#-key-features) •
@@ -26,12 +26,13 @@
 
 ## ⚡ Key Features
 
-- 💼 **Asynchronous Ledger Accounting**: Complete user balance, deposit, transfer, and transaction history tracking backed by `aiosqlite`.
+- 💼 **Asynchronous Ledger Accounting**: Complete user balance, deposit tracking, peer-to-peer transfers, and transaction history powered by `aiosqlite`.
 - 💓 **Cloud PaaS Keep-Alive Engine**:
-  - Heartbeat scheduler prevents cloud containers from sleeping during periods of inactivity.
+  - Heartbeat scheduler prevents cloud containers from idling during periods of inactivity.
   - Optional external self-ping mechanism to satisfy cloud HTTP traffic requirements.
-- 🖥️ **Visual Web Database Inspector (`db_viewer.py`)**: Lightweight web-based visual management console to inspect user tables, balances, and audit trails without external SQLite tools.
-- 🛡️ **Graceful Concurrency & Rate Limiting**: Built with Telegram RateLimiter to prevent flood limits and API throttling.
+- 🖥️ **Visual Web Database Inspector (`db_viewer.py`)**: Lightweight web-based visual management console to inspect user tables, balances, and audit trails without external SQLite GUI tools.
+- 🛡️ **Graceful Concurrency & Rate Limiting**: Built with Telegram `AIORateLimiter` to prevent flood limits and API throttling.
+- ⚙️ **Dual Deployment Modes**: Seamlessly switch between Long Polling and Webhook modes via environment variables.
 
 ---
 
@@ -51,16 +52,20 @@ Designed specifically to run 24/7 on free-tier container platforms:
 
 ### 2. Installation
 ```bash
-git clone https://github.com/MOHAMMADREZAABEDINPOOR/PIMX_WALLET_BOT.git
-cd PIMX_WALLET_BOT
+git clone https://github.com/MOHAMMADREZAABEDINPOOR/mml-wallet.git
+cd mml-wallet
 
 python -m venv venv
-source venv/bin/activate  # Windows: .\venv\Scripts\activate
+# Windows:
+.\venv\Scripts\activate
+# Linux/macOS:
+source venv/bin/activate
+
 pip install -r requirements.txt
 
 # Configure environment
 cp env.example .env
-# Edit .env and supply your BOT_TOKEN and ADMIN_IDS
+# Edit .env and supply your BOT_TOKEN and ADMIN_CHAT_ID
 ```
 
 ### 3. Execution
@@ -71,22 +76,24 @@ python main.py
 # In another terminal, run the Visual Database Viewer (Optional)
 python db_viewer.py
 ```
-Open `http://localhost:5001` to view the SQLite tables.
+Open `http://localhost:5001` in your browser to inspect SQLite tables and live transactions.
 
 ---
 
 ## 🇮🇷 توضیحات فارسی (Persian Description)
 
-### معرفی ربات کیف پول PIMX_WALLET_BOT
-ربات **PIMX_WALLET_BOT** یک سیستم کیف پول دیجیتال غیرهمزمان (Async) برای تلگرام است که با **Python** و پایگاه‌داده **aiosqlite** توسعه یافته و مجهز به سیستم زنده نگه‌دارنده (Keep-Alive) برای هاست‌های ابری رایگان است.
+### معرفی پروژه MML Wallet
+ربات **MML Wallet** یک سیستم کیف پول دیجیتال غیرهمزمان (Async) پیشرفته برای تلگرام است که با زبان **Python** و پایگاه‌داده غیرهمزمان **aiosqlite** مهندسی شده و مجهز به سیستم زنده نگه‌دارنده (Keep-Alive) برای هاست‌های ابری رایگان و پنل وب اختصاصی مدیریت دیتابیس است.
 
-### امکانات ویژه:
-1. **مدیریت تراکنش‌ها و موجودی:**
-   * ثبت تراکنش‌ها، سوابق واریز، برداشت و انتقال وجه داخلی بین کاربران.
+### امکانات برجسته:
+1. **مدیریت کامل حساب‌ها و تراکنش‌ها:**
+   * ثبت تراکنش‌ها، سوابق واریز، برداشت، انتقال همتا به همتا (P2P) و گزارش‌گیری زنده موجودی.
 2. **سیستم Keep-Alive اختصاصی:**
-   * جلوگیری از خاموش شدن و Sleep رفتن ربات در پلتفرم‌های ابری مانند Render و Railway.
+   * جلوگیری هوشمندانه از خاموش شدن یا Sleep رفتن ربات در پلتفرم‌های ابری مثل Render و Railway.
 3. **نمایشگر بصری دیتابیس تحت وب (`db_viewer.py`):**
-   * پنل وب جمع‌وجور با فلسک برای مشاهده رکوردهای دیتابیس، موجودی کاربران و تراکنش‌ها در مرورگر.
+   * پنل وب مینیمال و کاربردی با Flask برای بررسی جداول SQLite، موجودی‌ها و لاگ تراکنش‌ها بدون نیاز به نرم‌افزار جانبی.
+4. **کنترل نرخ درخواست (Rate Limiting):**
+   * جلوگیری از مسدود شدن یا محدودیت تلگرام به کمک `AIORateLimiter`.
 
 ---
 
@@ -100,5 +107,5 @@ This project is licensed under the **GNU Affero General Public License v3.0 (AGP
 ---
 
 <div align="center">
-  <sub>Developed by <a href="https://github.com/MOHAMMADREZAABEDINPOOR">MOHAMMADREZA ABEDINPOOR</a>. Don't forget to ⭐!</sub>
+  <sub>Developed by <a href="https://github.com/MOHAMMADREZAABEDINPOOR">MOHAMMADREZA ABEDINPOOR</a>. Don't forget to leave a ⭐!</sub>
 </div>
