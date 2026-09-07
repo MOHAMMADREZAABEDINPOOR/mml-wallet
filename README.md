@@ -3,13 +3,13 @@
 <!-- ============================================================================== -->
 <!-- DYNAMIC ANIMATED CAPSULE HEADER                                                -->
 <!-- ============================================================================== -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24,30&height=220&section=header&text=MML%20Wallet&fontSize=42&fontAlignY=35&desc=%E2%9A%A1%20Async%20Telegram%20Ledger%2C%20Keep-Alive%20%26%20Flask%20DB%20Console&descFontSize=16&descAlignY=62" alt="MML Wallet Banner" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24,30&height=220&section=header&text=MML%20Wallet&fontSize=42&fontAlignY=35&desc=%F0%9F%9B%91%20Archived%20Async%20Telegram%20Ledger%20%26%20Keep-Alive%20Engine&descFontSize=16&descAlignY=62" alt="MML Wallet Banner" width="100%" />
 
 <!-- ============================================================================== -->
 <!-- ANIMATED TYPING SVG TELEMETRY                                                 -->
 <!-- ============================================================================== -->
 <a href="https://github.com/MOHAMMADREZAABEDINPOOR/mml-wallet">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=1000&color=00D2FF&center=true&vCenter=true&width=780&lines=High-Performance+Async+Telegram+Financial+Ledger+(Python+3.10%2B);Zero-Downtime+Cloud+PaaS+Keep-Alive+Engine+(Internal%2BExternal);Visual+Administrative+Flask+Web+Database+Console+(Port+5001);SQLite3+Double-Entry+Accounting+with+Write-Ahead+Logging;Strict+Rate-Limiter+Mitigating+Telegram+API+FloodWait+Limits;Bilingual+Interactive+Inline+Keyboards+(English+%26+Persian)" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=1000&color=00D2FF&center=true&vCenter=true&width=780&lines=Project+Status%3A+Inactive+%2F+Archived+Ledger;High-Performance+Async+Telegram+Financial+Ledger+(Python+3.10%2B);Zero-Downtime+Cloud+PaaS+Keep-Alive+Engine+(Internal%2BExternal);Visual+Administrative+Flask+Web+Database+Console+(Port+5001);SQLite3+Double-Entry+Accounting+with+Write-Ahead+Logging;Strict+Rate-Limiter+Mitigating+Telegram+API+FloodWait+Limits;Bilingual+Interactive+Inline+Keyboards+(English+%26+Persian)" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -17,6 +17,7 @@
 <!-- ============================================================================== -->
 <!-- BADGES MATRIX                                                                  -->
 <!-- ============================================================================== -->
+[![Project Status: Inactive / Archived](https://img.shields.io/badge/Status-Inactive%20%7C%20Archived-critical?style=for-the-badge&logo=archive)](https://github.com/MOHAMMADREZAABEDINPOOR)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg?style=for-the-badge&logo=gnu)](https://www.gnu.org/licenses/agpl-3.0)
 [![Python: 3.10+](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![aiosqlite](https://img.shields.io/badge/Database-aiosqlite_Async-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://github.com/omnilib/aiosqlite)
@@ -44,6 +45,12 @@
 </div>
 
 ---
+
+> [!CAUTION]
+> ### 🛑 Project Status: Inactive / Archived (پروژه غیرفعال و بایگانی‌شده)
+> **Notice**: This repository is currently **inactive** and maintained as an open-source architectural reference for asynchronous financial ledgers. The live Telegram bot is offline and not operating.
+>
+> **توجه مهم**: این پروژه در حال حاضر **کاملاً غیرفعال (Inactive / Archived)** است و سرور یا ربات مالی فعالی در تلگرام بر روی آن بالا نیست. سورس‌کد صرفاً جهت نمایش معماری فنی و حسابداری دوطرفه نگهداری می‌گردد.
 
 ## ⚡ Project Overview & Architecture
 
@@ -155,6 +162,9 @@ Open `http://localhost:5001` in your browser to inspect database tables.
 ---
 
 ## 🇮🇷 بخش فوق‌العاده مفصل و جامع به زبان فارسی (Persian Documentation)
+
+> ⚠️ **وضعیت پروژه: کاملاً غیرفعال (Inactive / Archived)**
+> این پروژه و بات‌های مربوطه در حال حاضر غیرفعال بوده و عملیاتی نیستند؛ سورس‌کد کامل پروژه صرفاً برای اهداف آموزشی، پژوهشی و استفاده به عنوان مرجع متن‌باز در دسترس قرار دارد.
 
 ### ۱. مقدمه و چرایی ساخت ربات کیف پول MML Wallet
 پروژه **MML Wallet** یک سامانه پیشرفته مدیریت امور مالی، کیف پول دیجیتال و دفترکل تراکنش‌های همتا به همتا (P2P) در پیام‌رسان تلگرام است که به زبان پایتون مدرن و با معماری کاملاً ناهمگام (**Asyncio**) و پایگاه‌داده **aiosqlite** مهندسی شده است.
