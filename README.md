@@ -3,7 +3,7 @@
 <!-- ============================================================================== -->
 <!-- DYNAMIC ANIMATED CAPSULE HEADER                                                -->
 <!-- ============================================================================== -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24,30&height=220&section=header&text=MML%20Wallet&fontSize=42&fontAlignY=35&desc=%F0%9F%9B%91%20Archived%20Async%20Telegram%20Ledger%20%26%20Keep-Alive%20Engine&descFontSize=16&descAlignY=62" alt="MML Wallet Banner" width="100%" />
+<img src="./assets/banner.svg" alt="MML Wallet 3D Banner" width="100%" />
 
 <!-- ============================================================================== -->
 <!-- ANIMATED TYPING SVG TELEMETRY                                                 -->
@@ -23,7 +23,7 @@
 [![aiosqlite](https://img.shields.io/badge/Database-aiosqlite_Async-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://github.com/omnilib/aiosqlite)
 [![Flask](https://img.shields.io/badge/Web_Console-Flask-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
 [![Telegram Bot API](https://img.shields.io/badge/Telegram_Bot_API-v21+-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://core.telegram.org/bots/api)
-[![Read in Persian](https://img.shields.io/badge/مطالعه_به_فارسی-Persian_README-008080?style=for-the-badge)](#-بخش-فوقالعاده-مفصل-و-جامع-به-زبان-فارسی-persian-documentation)
+[![Read in Persian](https://img.shields.io/badge/مطالعه_به_فارسی-Persian_README-008080?style=for-the-badge)](#persian-documentation)
 
 <p align="center">
   <b>MML Wallet</b> is an asynchronous financial cryptocurrency and digital asset wallet bot for Telegram. Engineered with Python 3.10+ <code>asyncio</code> and <code>aiosqlite</code>, MML Wallet features multi-user double-entry accounting, internal and external keep-alive heartbeats designed specifically for free-tier PaaS cloud hosts (Render, Railway, Heroku), and a standalone administrative Flask web database console.
@@ -38,7 +38,7 @@
 [Visual Web Console](#-visual-web-database-console-db_viewerpy) •
 [Installation Guide](#-installation--quick-start) •
 [Configuration](#-configuration--environment-variables) •
-[توضیحات فارسی](#-بخش-فوقالعاده-مفصل-و-جامع-به-زبان-فارسی-persian-documentation) •
+[توضیحات فارسی](#persian-documentation) •
 [Roadmap](#-strategic-engineering-roadmap) •
 [License](#-copyleft-license--legal-attribution)
 
@@ -161,7 +161,8 @@ Open `http://localhost:5001` in your browser to inspect database tables.
 
 ---
 
-## 🇮🇷 بخش فوق‌العاده مفصل و جامع به زبان فارسی (Persian Documentation)
+## Persian Documentation
+### 🇮🇷 مستندات فوق‌العاده مفصل، جامع و فنی به زبان فارسی
 
 > ⚠️ **وضعیت پروژه: کاملاً غیرفعال (Inactive / Archived)**
 > این پروژه و بات‌های مربوطه در حال حاضر غیرفعال بوده و عملیاتی نیستند؛ سورس‌کد کامل پروژه صرفاً برای اهداف آموزشی، پژوهشی و استفاده به عنوان مرجع متن‌باز در دسترس قرار دارد.
@@ -202,7 +203,7 @@ Under this copyleft covenant, any derivative software, hosted web application, o
 <!-- ============================================================================== -->
 <!-- ANIMATED CAPSULE FOOTER                                                        -->
 <!-- ============================================================================== -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24,30&height=120&section=footer" alt="Footer" width="100%" />
+<img src="./assets/footer.svg" alt="MML Wallet 3D Footer" width="100%" />
 
 <sub>Architected with dedication by <a href="https://github.com/MOHAMMADREZAABEDINPOOR"><b>MOHAMMADREZA ABEDINPOOR</b></a>. If MML Wallet powers your financial workflows, consider leaving a ⭐!</sub>
 
