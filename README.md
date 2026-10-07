@@ -1,27 +1,41 @@
 <div align="center">
 
-<img src="assets/readme/hero.gif" width="1200" alt="MML WALLET — rotating 3D geometry" />
+<img src="assets/readme/hero.gif" width="1200" alt="MML WALLET: a Telegram wallet with stacked coins and a transaction receipt" />
 
 **[English](README.md) · [فارسی](README.fa.md)**
 
-<img src="assets/readme/identity.svg" width="1200" alt="ai / English and Persian documentation" />
-
 </div>
 
-# MML WALLET
+# 👛 MML WALLET
 
 A Telegram wallet/collection bot with asynchronous SQLite storage, configurable administrative settings, a keep-alive helper and a Flask database viewer.
 
 [GitHub](https://github.com/MOHAMMADREZAABEDINPOOR/mml-wallet) · [PIMX / Profile](https://github.com/MOHAMMADREZAABEDINPOOR) · [Static artwork](assets/readme/hero.png)
 
-## Features
+| At a glance | Details |
+|:---|:---|
+| 👛 Experience | Telegram bot and its supporting tools |
+| 🧰 Built with | `python-telegram-bot[rate-limiter]==21.6` · `aiosqlite==0.20.0` · `flask==3.0.3` · `requests==2.32.3` |
+| 🌐 Documentation | [English](README.md) · [فارسی](README.fa.md) |
 
-- Async Telegram handlers and SQLite persistence
-- Collection wallet and administrator configuration
-- Optional keep-alive service for hosting
-- Separate Flask viewer for local database inspection
+[✨ Features](#features) · [🚀 Getting started](#getting-started) · [⚙️ Configuration](#configuration) · [🌍 Deployment](#deployment)
 
-## Stack
+---
+
+<a id="features"></a>
+
+## ✨ Features
+
+| Area | Included capability |
+|:---|:---|
+| 🗄️ Data | Async Telegram handlers and SQLite persistence |
+| 👤 Accounts | Collection wallet and administrator configuration |
+| 🔌 Integration | Optional keep-alive service for hosting |
+| 🌐 Experience | Separate Flask viewer for local database inspection |
+
+<a id="stack"></a>
+
+## 🧰 Stack
 
 | Tool | Version / source |
 |---|---|
@@ -30,7 +44,9 @@ A Telegram wallet/collection bot with asynchronous SQLite storage, configurable 
 | flask==3.0.3 | `requirements.txt` |
 | requests==2.32.3 | `requirements.txt` |
 
-## Getting started
+<a id="getting-started"></a>
+
+## 🚀 Getting started
 
 Python 3; a desktop/Tk installation for Tkinter or turtle examples. Tkinter is provided by the Python installation, not pip. Legacy dependencies may need a compatible Python version.
 
@@ -45,7 +61,9 @@ python -m pip install -r requirements.txt
 python main.py
 ```
 
-## Configuration
+<a id="configuration"></a>
+
+## ⚙️ Configuration
 
 These names are found in the example configuration or source; not all are required. Check their defaults/usage in those files and supply secrets only in your local or hosting environment.
 
@@ -65,11 +83,15 @@ These names are found in the example configuration or source; not all are requir
 | `TOKEN_LIMIT` | Credential/connection setting; keep private |
 | `WEBHOOK_URL` | Application setting; inspect its definition |
 
-## Usage
+<a id="usage"></a>
+
+## 🎯 Usage
 
 Copy env.example to .env and configure BOT_TOKEN plus collection/admin settings. Run main.py. Use db_viewer.py only on a trusted local interface to inspect a development database.
 
-## Project structure
+<a id="project-structure"></a>
+
+## 🗂️ Project structure
 
 | Path | Role |
 |---|---|
@@ -77,25 +99,35 @@ Copy env.example to .env and configure BOT_TOKEN plus collection/admin settings.
 | [`db_viewer.py`](db_viewer.py) | Project entry/configuration file |
 | [`main.py`](main.py) | Project entry/configuration file |
 
-## Commands and checks
+<a id="commands-and-checks"></a>
+
+## 🧪 Commands and checks
 
 No automated test command is declared in a manifest. Verify behavior through a local example run.
 
-## Deployment
+<a id="deployment"></a>
+
+## 🌍 Deployment
 
 Host a long-running bot process with environment secrets and private storage. Run a single polling instance. Check network access and dependency compatibility on the host.
 
-## Limitations
+<a id="limitations"></a>
+
+## 📌 Limitations
 
 The source does not establish audited accounting, custody or transaction guarantees. The viewer can expose user records if made public. Keep-alive requests do not guarantee hosting uptime.
 
-## Troubleshooting
+<a id="troubleshooting"></a>
+
+## 🛠️ Troubleshooting
 
 - Authentication/provider errors: verify credentials and selected model/provider.
 - No Telegram updates: check polling/webhook mode and concurrent bot instances.
 - Missing dependencies: use the declared manifest or inspect imports if no manifest is provided.
 
-## Contributing
+<a id="contributing"></a>
+
+## 🤝 Contributing
 
 Create a focused branch, verify the affected behavior and explain the change clearly. Keep private data, build outputs and local databases out of commits.
 
@@ -103,10 +135,20 @@ Supporting guides:
 
 - [README_KEEPALIVE.md](README_KEEPALIVE.md)
 
-## License
+<a id="license"></a>
+
+## 📄 License
 
 No repository-level license file is included in this snapshot. Public visibility alone does not grant reuse rights; contact the repository owner for terms.
 
 ---
 
 Part of **PIMX** · Documentation in English and Persian.
+
+---
+
+<div align="center">
+
+👛 **MML WALLET** · [English](README.md) · [فارسی](README.fa.md)
+
+</div>
